@@ -1,0 +1,14 @@
+.title {
+  color: #cd5c5c;
+}
+
+.portfolioIndex article {
+  width: 300px;
+  float: left;
+  margin-left: 40px;
+}
+
+.portfolioIndex article h3 {
+  color: #6495ed;
+
+}
