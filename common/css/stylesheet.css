@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fondamento&family=Great+Vibes&family=Righteous&family=Rye&display=swap');
+
+.typeBM {font-family: 'Abril Fatface', cursive; }
+.typeNG {font-family: 'Great Vibes', cursive;}
+.typeTB {font-family: 'Fondamento', cursive;}
+.typeTM {font-family: 'Righteous', cursive;}
+.typeVA {font-family: 'Rye', cursive;}
+
+.typeHOME {font-family: 'Josefin Sans', sans-serif;}
+
+
+
+body {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+/*リンク*/
+a {color: #4169E1;}
+a:hover {color: #A52A2A;}
+
+/*ページ*/
+#page {
+width: 600px;
+position: absolute;
+top: 50px;
+left: 50px;
+}
+
+/*グローバルナビ*/
+#pageBodySub {
+  position: absolute;
+  top: 470px;
+  left: 0px;
+}
+#pageBodySub .globalNavi h1 {
+  margin-bottom: 0px;
+}
+#pageBodySub .globalNavi h1 a {
+font-family: 'Josefin Sans', sans-serif;
+text-decoration: none;
+font-size: 55px;
+}
+
+
+#pageBodySub .globalNavi ul{
+  margin: 0;
+  padding: 0;
+
+}
+#pageBodySub .globalNavi ul li {
+  list-style: none;
+  padding-right: 20px;
+  float: left;
+  font-size: 30px;
+  line-height: 40px;
+}
+#pageBodySub .globalNavi ul li a{
+  text-decoration: none;
+}
+
+#pageBodySub .globalNavi h1 a:hover ,
+#pageBodySub .globalNavi h1.current a {
+  color: #A52A2A;
+}
+
+#pageBodySub .globalNavi ul li a:hover ,
+#pageBodySub .globalNavi ul li.current a {
+ color: #A52A2A;
+}
+
+
+
+/*-----トップページの内容-----*/
+/*メインビジュアル*/
+
+#pageBodyMain .mainVisual {
+  position: relative;
+}
+#pageBodyMain .mainVisual .mainVisualText {
+  position: absolute;
+  left: 150px;
+  top: 80px;
+  color: white;
+background-color: #4169e1;
+  opacity: 0.7;
+  width: 300px;
+  padding: 20px 30px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#pageBodyMain .mainVisual .mainVisualText h1 {
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+#pageBodyMain .mainVisual .mainVisualTextSsize {
+  position: absolute;
+  left: 145px;
+  top: 80px;
+  color: white;
+background-color: #4169e1;
+  opacity: 0.7;
+  width: 320px;
+  padding: 20px 30px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#pageBodyMain .mainVisual .mainVisualTextSsize h1 {
+  font-size: 38px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+#pageBodyMain .mainVisual ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#pageBodyMain .mainVisual ul li {
+   position: relative;
+}
+
+/*トップテキスト*/
+.topText {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 0;
+  margin-top: 1px;
+}
+
+/*-----museumページ-----*/
+/*画像１段目*/
+#pageBodyMain .articleVisuals {
+  text-align: center;
+  margin: auto;
+}
+#pageBodyMain .articleVisuals .p1 {
+display: inline-block;
+margin: 0px;
+}
+#pageBodyMain .articleVisuals img {
+border: solid 4px #daa520;
+box-shadow: 2px 2px 4px black;
+margin: 0px 5px;
+vertical-align: middle;
+box-sizing: border-box;
+}
+/*画像２段目*/
+#pageBodyMain .articleVisuals2 {
+  text-align: center;
+  margin: auto;
+}
+#pageBodyMain .articleVisuals2 .p1 {
+display: inline-block;
+margin: 10px 0px 0px 0px;
+}
+#pageBodyMain .articleVisuals2 img {
+border: solid 4px #daa520;
+box-shadow: 2px 2px 4px black;
+margin: 0px 5px;
+vertical-align: middle;
+box-sizing: border-box;
+}
+/*テキスト*/
+#pageBodyMain .articleText h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+#pageBodyMain .articleText h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 5px;
+}
+#pageBodyMain .articleText h3 a {
+  text-decoration: none;
+  color: #A52A2A;
+}
+#pageBodyMain .articleText p {
+font-family: 'M PLUS 1p', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
