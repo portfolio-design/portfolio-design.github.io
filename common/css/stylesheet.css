@@ -3,13 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fondamento&family=Great+Vibes&family=Righteous&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Fondamento&family=Great+Vibes&family=Marcellus&family=Monoton&family=Nova+Mono&family=Parisienne&family=Righteous&family=Rye&family=Spinnaker&family=Yeseva+One&display=swap');
 
-.typeBM {font-family: 'Abril Fatface', cursive; }
-.typeNG {font-family: 'Great Vibes', cursive;}
-.typeTB {font-family: 'Fondamento', cursive;}
-.typeTM {font-family: 'Righteous', cursive;}
-.typeVA {font-family: 'Rye', cursive;}
+
+.typeAF {font-family: 'Abril Fatface', cursive;}
+.typeAcme {font-family: 'Acme', sans-serif;}
+.typeFM {font-family: 'Fondamento', cursive;}
+.typeGV {font-family: 'Great Vibes', cursive;}
+.typeML {font-family: 'Marcellus', serif;}
+.typeMo {font-family: 'Monoton', cursive;}
+.typeNM {font-family: 'Nova Mono', monospace;}
+.typePa {font-family: 'Parisienne', cursive;}
+.typeRE {font-family: 'Righteous', cursive;}
+.typeRye {font-family: 'Rye', cursive;}
+.typeSp {font-family: 'Spinnaker', sans-serif;}
+.typeYO {font-family: 'Yeseva One', cursive;}
+
+
 
 .typeHOME {font-family: 'Josefin Sans', sans-serif;}
 
@@ -17,51 +27,88 @@
 
 
 body {
+  font-family: sans-serif;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
-  font-family: sans-serif;
 }
 
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+
 /*リンク*/
-a {color: #4169E1;}
-a:hover {color: #A52A2A;}
+a {color: #675f4f;}
+
 
 /*ページ*/
 #page {
-width: 600px;
+width: 1280px;
 position: absolute;
 top: 50px;
 left: 50px;
 }
 
+#pageBodyMain {
+width: 600px;
+}
+
+#outpage p {
+  margin: 0;
+}
+
+/*出口*/
+#pageBodyExit {
+position: absolute;
+width: 110px;
+height: 150px;
+top: 425px;
+left: 734px;
+}
+#pageBodyExit p {
+margin: 0px;
+}
+
+
+
 /*グローバルナビ*/
 #pageBodySub {
   position: absolute;
+  width: 720px;
   top: 460px;
   left: 0px;
 }
-#pageBodySub .globalNavi h1 {
+
+#pageBodySub .HomeTitle {
+  float: left;
+}
+
+
+#pageBodySub .globalNavi  h1{
   margin-bottom: 0px;
 }
+
 #pageBodySub .globalNavi h1 a {
 font-family: 'Josefin Sans', sans-serif;
 text-decoration: none;
 font-size: 55px;
-}
 
+}
 
 #pageBodySub .globalNavi ul{
   margin: 0;
   padding: 0;
 }
-#pageBodySub .globalNavi ul li {
+#pageBodySub .globalNavi li {
   list-style: none;
-  padding-right: 20px;
+  padding-right: 25px;
   float: left;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 24px;
+  line-height: 30px;
 }
-#pageBodySub .globalNavi ul li a{
+#pageBodySub .globalNavi  ul li a{
   text-decoration: none;
 }
 
@@ -72,31 +119,70 @@ font-size: 55px;
 
 #pageBodySub .globalNavi ul li a:hover ,
 #pageBodySub .globalNavi ul li.current a {
- color: #A52A2A;
+ color: #4169e1;
 }
+
+/*ーーーーツールチップーーーー*/
+.tooltip{
+  float: right;
+    position: relative;
+    cursor: pointer;
+    display:  inline-block;
+}
+.tooltip img{
+    width: 80px;
+    height: 50px;
+}
+.description {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 5px;
+    background: #000;
+    width: 100px;
+}
+
+.description:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 15px solid transparent;
+    border-top: 15px solid #000;
+    margin-left: -15px;
+}
+.tooltip:hover .description{
+    display: inline-block;
+    top: -80px;
+    left: -15px;
+}
+/*ーーーーツールチップーーーー*/
 
 
 
 /*-----トップページの内容-----*/
 /*メインビジュアル*/
-
 #pageBodyMain .mainVisual {
   position: relative;
+
 }
 #pageBodyMain .mainVisual .mainVisualText {
   position: absolute;
-  left: 150px;
+  left: 130px;
   top: 80px;
   color: white;
-background-color: #4169e1;
+background-color: #4169e1	;
   opacity: 0.7;
-  width: 310px;
-  padding: 20px 30px;
+  width: 335px;
+  padding: 20px 0px 40px 30px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 #pageBodyMain .mainVisual .mainVisualText h1 {
-  font-size: 50px;
+  font-size: 47px;
   line-height: 1;
   margin-bottom: 15px;
 }
@@ -109,7 +195,7 @@ background-color: #4169e1;
 background-color: #4169e1;
   opacity: 0.7;
   width: 340px;
-  padding: 20px 30px;
+  padding: 20px 0px 20px 30px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -164,51 +250,123 @@ background-color: #4169e1;
   margin: auto;
 }
 #pageBodyMain .articleVisuals .p1 {
-display: inline-block;
+  display: inline-block;
 margin: 0px;
 }
 #pageBodyMain .articleVisuals img {
-border: solid 4px #daa520;
+border: solid 3px #daa520;
 box-shadow: 2px 2px 4px black;
 margin: 0px 5px;
 vertical-align: middle;
 box-sizing: border-box;
+transition-duration: 0.5s;
 }
+#pageBodyMain .articleVisuals img:hover {
+  transform: scale(1.4,1.4);
+  transition-duration: 0.3s;
+  }
+
 /*画像２段目*/
 #pageBodyMain .articleVisuals2 {
   text-align: center;
   margin: auto;
 }
 #pageBodyMain .articleVisuals2 .p1 {
-display: inline-block;
+  display: inline-block;
 margin: 10px 0px 0px 0px;
 }
 #pageBodyMain .articleVisuals2 img {
+border: solid 3px #daa520;
+box-shadow: 2px 2px 4px black;
+margin: 0px 5px;
+vertical-align: middle;
+box-sizing: border-box;
+transition-duration: 0.5s;
+}
+#pageBodyMain .articleVisuals2 img:hover {
+  transform: scale(1.7,1.7);
+  transition-duration: 0.3s;
+  }
+
+  /*テキスト*/
+  #pageBodyMain .articleText h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  #pageBodyMain .articleText h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+  }
+  #pageBodyMain .articleText h3 a {
+    text-decoration: none;
+    color: #444444;
+  }
+  #pageBodyMain .articleText p {
+  font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+  }
+
+
+/*-----Mapページ-----*/
+#pageBodyMain .articleMaps {
+  text-align: center;
+  margin: auto;
+}
+#pageBodyMain .articleMaps .p1 {
+display: inline-block;
+margin: 0px;
+}
+#pageBodyMain .articleMaps img {
 border: solid 4px #daa520;
 box-shadow: 2px 2px 4px black;
 margin: 0px 5px;
 vertical-align: middle;
 box-sizing: border-box;
 }
+
 /*テキスト*/
-#pageBodyMain .articleText h2 {
-  font-size: 30px;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-#pageBodyMain .articleText h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: 5px;
-}
-#pageBodyMain .articleText h3 a {
-  text-decoration: none;
-  color: #A52A2A;
-}
-#pageBodyMain .articleText p {
+#pageBodyMain .articleMapsText p {
 font-family: 'M PLUS 1p', sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: white;
   margin: 0;
+}
+#pageBodyMain .mapNavi {
+  position: absolute;
+  top: 410px;
+}
+
+
+#pageBodyMain .mapNavi  h5{
+  margin: 0;
+}
+
+
+#pageBodyMain .mapNavi ul{
+  margin: 0;
+  padding: 0;
+}
+#pageBodyMain .mapNavi li {
+  list-style: none;
+  padding-right: 40px;
+  float: left;
+  font-size: 24px;
+}
+#pageBodyMain .mapNavi  ul li a{
+color: white;
+  text-decoration: none;
+}
+
+#pageBodyMain .mapNavi h5 a:hover ,
+#pageBodyMain .mapNavi h5.current a {
+  color: #A52A2A;
+
 }
